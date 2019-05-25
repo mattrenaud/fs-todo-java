@@ -3,3 +3,4 @@ target
 bin
 .project
 .classpath
+.vscode
