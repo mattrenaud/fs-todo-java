@@ -1,0 +1,5 @@
+{
+  "ext": "java",
+  "watch": ["src/main/java","src/test/java"],
+  "exec": "mvn test"
+}
