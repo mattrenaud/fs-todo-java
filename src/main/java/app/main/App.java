@@ -11,7 +11,6 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
 import org.springframework.data.rest.core.mapping.RepositoryDetectionStrategy;
 import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurer;
-import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurerAdapter;
 
 @SpringBootApplication(scanBasePackages = { "app.models" })
 @EnableAutoConfiguration
@@ -37,13 +36,5 @@ public class App {
         config.setRepositoryDetectionStrategy(RepositoryDetectionStrategy.RepositoryDetectionStrategies.ALL);
       }
     };
-    
-    // new RepositoryRestConfigurerAdapter() {
-    //   @Override
-    //   public void configureRepositoryRestConfiguration(RepositoryRestConfiguration config) {
-    //     config.setRepositoryDetectionStrategy(RepositoryDetectionStrategy.RepositoryDetectionStrategies.ALL);
-    //   }
-    // };
   }
-
 }
