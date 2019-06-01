@@ -2,20 +2,16 @@ package app.models;
 
 import java.util.Date;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
-import javax.persistence.Table;
 
 @Entity
-@Table(name = "todo_items")
 public class ToDoItem {
 
   @Id
   private String id;
-  @Column(name = "list_id")
   private String listId;
   private String title;
   private Date created;

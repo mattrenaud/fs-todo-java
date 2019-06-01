@@ -1,19 +1,14 @@
 package app.models;
 
-import java.io.Serializable;
 import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
-import javax.persistence.Table;
 
 @Entity
-@Table(name = "todo_lists")
-public class ToDoList implements Serializable {
-
-  private static final long serialVersionUID = 1L;
+public class ToDoList {
   @Id
   private String id;
   private String title;
